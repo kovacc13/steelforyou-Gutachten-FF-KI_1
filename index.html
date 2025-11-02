@@ -125,6 +125,9 @@
             <button id="tab4" class="tab-button tab-inactive flex-1 text-center py-3 px-2 min-w-[200px]" onclick="showTab(4)">
                 4. Gerichtsfeste Doku. & ROI
             </button>
+            <button id="tab5" class="tab-button tab-inactive flex-1 text-center py-3 px-2 min-w-[200px]" onclick="showTab(5)">
+                5. Strukturprojektplan & Förderung
+            </button>
         </div>
     </header>
 
@@ -187,7 +190,6 @@
 
         <!-- TAB 2: FOTO-ANALYSE -->
         <div id="content2" class="tab-content space-y-6 hidden">
-            <!-- KORREKTUR: Überschrift auf 2. aktualisiert -->
             <h2 class="text-3xl font-extrabold text-gray-900 border-b pb-3 border-secondary/50">🔬 2. Foto-Analyse (Radiologen-Augen)</h2>
             <p class="text-lg text-gray-700">**KI-gestützte Bildanalyse** - präzise wie medizinische Diagnostik. Claude analysiert 45 Fotos in 3 Minuten, erkennt Schadens-Morphologie und leitet die gerichtliche Relevanz ab.</p>
 
@@ -256,7 +258,6 @@
 
         <!-- TAB 3: AUTOMATISCHE BESCHRIFTUNG -->
         <div id="content3" class="tab-content space-y-6 hidden">
-            <!-- KORREKTUR: Überschrift auf 3. aktualisiert -->
             <h2 class="text-3xl font-extrabold text-gray-900 border-b pb-3 border-secondary/50">📝 3. Automatische Foto-Beschriftung</h2>
             <p class="text-lg text-gray-700">**Professionelle Beschriftung** wie in Fachpublikationen. Setzt Pfeile, Maße und Metadaten. **Spart bis zu 99% der Zeit** für die manuelle Bildbearbeitung.</p>
 
@@ -333,7 +334,6 @@ mit Nahtdicke a≈8mm (blau, nicht sichtbar in dieser Sim.).
 
         <!-- TAB 4: GERICHTSFESTE DOKUMENTATION & ROI -->
         <div id="content4" class="tab-content space-y-6 hidden">
-            <!-- KORREKTUR: Überschrift auf 4. aktualisiert -->
             <h2 class="text-3xl font-extrabold text-gray-900 border-b pb-3 border-secondary/50">⚖️ 4. Gerichtsfeste Doku. & ROI</h2>
             <p class="text-lg text-gray-700">Sicherstellung von **Objektivität und Nachvollziehbarkeit** (95% Gerichtskontext). KI prüft Sprache, Normenkonformität und Kausalitätsketten.</p>
 
@@ -462,8 +462,115 @@ mit Nahtdicke a≈8mm (blau, nicht sichtbar in dieser Sim.).
                 <div class="p-4 bg-yellow-100 rounded-xl text-sm font-bold mb-4 border border-yellow-300 shadow-md">
                     Prognostizierte Bandbreite der Effizienzsteigerung: <span class="text-red-600">33% (konservativ)</span> bis <span class="text-secondary">66% (optimistisch)</span> pro Gutachten.
                 </div>
-                <button class="bg-secondary text-white py-3 px-8 rounded-xl shadow-lg text-lg font-bold hover-bg-secondary transition" onclick="alert('KI-Assistent GO-LIVE genehmigt! Start in Woche 5. ')">
-                    GO-LIVE ENTSCHEIDUNG
+                <button class="bg-secondary text-white py-3 px-8 rounded-xl shadow-lg text-lg font-bold hover-bg-secondary transition" onclick="showTab(5)">
+                    Weiter zu 5. Projektplan & Förderung
+                </button>
+            </div>
+        </div>
+        
+        <!-- TAB 5: STRUKTURPROJEKTPLAN & FÖRDERUNG -->
+        <div id="content5" class="tab-content space-y-6 hidden">
+            <h2 class="text-3xl font-extrabold text-gray-900 border-b pb-3 border-secondary/50">5. Strukturprojektplan & Förderung</h2>
+            <p class="text-lg text-gray-700">Die Roadmap für die erfolgreiche Implementierung des KI-Assistenten, inklusive wichtiger **Fördermöglichkeiten** in Österreich (Steiermark).</p>
+
+            <details class="mt-4" open>
+                <summary class="text-xl">Grobe Strukturplanung: 5 Phasen bis zum Produktiveinsatz</summary>
+                <div class="pt-6 space-y-4">
+                    <!-- Projektplan-Tabelle -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-md">
+                            <thead>
+                                <tr class="bg-primary text-white text-left">
+                                    <th class="py-3 px-4 font-semibold">Phase</th>
+                                    <th class="py-3 px-4 font-semibold">Titel</th>
+                                    <th class="py-3 px-4 font-semibold">Dauer</th>
+                                    <th class="py-3 px-4 font-semibold">Ziel</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-bold text-secondary">I</td>
+                                    <td class="py-3 px-4 font-bold">Setup & Foundation</td>
+                                    <td class="py-3 px-4">1 Woche</td>
+                                    <td class="py-3 px-4">Installation der KI-Tools, Anonymisierung & Digitalisierung der 10 Top-Gutachten (Lernbasis).</td>
+                                </tr>
+                                <tr class="border-b bg-gray-50">
+                                    <td class="py-3 px-4 font-bold text-secondary">II</td>
+                                    <td class="py-3 px-4 font-bold">Workflow-Design & Training</td>
+                                    <td class="py-3 px-4">2 Wochen</td>
+                                    <td class="py-3 px-4">Entwicklung der Custom Instructions, Training des KI-Modells mit Steelforyou-CI und Normen (EN/ISO).</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4 font-bold text-secondary">III</td>
+                                    <td class="py-3 px-4 font-bold">Pilotbetrieb (MVP)</td>
+                                    <td class="py-3 px-4">1 Woche</td>
+                                    <td class="py-3 px-4">Erstellung von 2 ECHTEN Pilot-Gutachten, Time-Tracking, Validierung der Output-Qualität (Peer-Review).</td>
+                                </tr>
+                                <tr class="border-b bg-gray-50">
+                                    <td class="py-3 px-4 font-bold text-secondary">IV</td>
+                                    <td class="py-3 px-4 font-bold">Team-Rollout & QA</td>
+                                    <td class="py-3 px-4">1 Woche</td>
+                                    <td class="py-3 px-4">Schulung des gesamten Teams, finale Korrekturen der Prompts, Verfeinerung des Beschriftungs-Stils.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-bold text-secondary">V</td>
+                                    <td class="py-3 px-4 font-bold">Go-Live & Monitoring</td>
+                                    <td class="py-3 px-4">Laufend</td>
+                                    <td class="py-3 px-4">Produktiveinsatz für alle neuen Gutachten. Wöchentliches Monitoring der Effizienzsteigerung (ROI-Messung).</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </details>
+            
+            <details class="mt-8" open>
+                <summary class="text-xl">Fördermodule und Digitale Subventionen (Österreich / Steiermark)</summary>
+                <div class="pt-6 space-y-6">
+                    <p class="text-sm italic text-gray-700">Die Implementierung dieses Projekts fällt direkt in den Bereich **Digitalisierung/Prozessoptimierung**, der in Österreich und der Steiermark stark gefördert wird.</p>
+
+                    <!-- Modul 1: SFG X Jobmodul -->
+                    <div class="bg-accent-light p-4 rounded-xl border-l-4 border-secondary shadow-inner">
+                        <h4 class="font-bold text-lg text-primary">1. SFG X Jobmodul (Steiermark)</h4>
+                        <p class="text-sm mt-1">
+                            **Fokus:** Qualifizierung und Höherqualifizierung von Beschäftigten.
+                            <br>
+                            **Relevanz:** Ideal zur Abdeckung der **internen Schulungskosten (Phase IV)** und der **Projektmanagement-Kosten (Phase I-III)**, die Dipl.-HTL-Ing. Felber und das Team für die KI-Einarbeitung und Workflow-Anpassung benötigen.
+                            <br>
+                            **Förderung:** Bis zu 50% der förderfähigen Qualifizierungskosten.
+                        </p>
+                    </div>
+
+                    <!-- Modul 2: Digitalisierungsförderung (z.B. FFG/AWS) -->
+                    <div class="bg-gray-100 p-4 rounded-xl border-l-4 border-primary/50 shadow-inner">
+                        <h4 class="font-bold text-lg text-primary">2. KMU.DIGITAL (Österreich/AWS)</h4>
+                        <p class="text-sm mt-1">
+                            **Fokus:** Investitionen in die Digitalisierung von Geschäftsmodellen und Prozessen.
+                            <br>
+                            **Relevanz:** Kann die **Investitionskosten für Software-Setup (Phase I)** und die **Beratungskosten** für die Entwicklung der spezifischen KI-Workflow-Anweisungen (Custom Instructions) abdecken.
+                            <br>
+                            **Förderung:** Bis zu 50% der förderfähigen Kosten (abhängig vom Modul).
+                        </p>
+                    </div>
+
+                    <!-- Modul 3: Forschungsprämie (Für Custom KI-Entwicklung) -->
+                    <div class="bg-accent-light p-4 rounded-xl border-l-4 border-secondary shadow-inner">
+                        <h4 class="font-bold text-lg text-primary">3. Österreichische Forschungsprämie (BMF)</h4>
+                        <p class="text-sm mt-1">
+                            **Fokus:** Eigene Forschungs- und Entwicklungstätigkeiten (F&E).
+                            <br>
+                            **Relevanz:** Die Entwicklung des **"Radiologen-Augen"-KI-Modells** und der komplexen **Gerichtsfeste-Dokumentations-Algorithmen** (KI-Prompts/Logik) kann unter F&E fallen.
+                            <br>
+                            **Förderung:** 14% der gesamten F&E-Kosten werden als Prämie vom Finanzamt ausbezahlt.
+                        </p>
+                    </div>
+                </div>
+            </details>
+
+            <div class="text-center pt-8">
+                <p class="text-xl font-semibold text-primary mb-4">Nächster Schritt:</p>
+                <button class="bg-primary text-white py-3 px-8 rounded-xl shadow-lg text-lg font-bold hover:bg-blue-900 transition" onclick="alert('Nächster Schritt: Detail-Abstimmung und Förderanträge vorbereiten.')">
+                    Detail-Abstimmung & Förderanträge (Phase I)
                 </button>
             </div>
         </div>
@@ -537,10 +644,13 @@ mit Nahtdicke a≈8mm (blau, nicht sichtbar in dieser Sim.).
                 status.classList.remove('hidden');
                 
                 // Aktualisiere Gesamtbewertung
-                document.querySelector('.text-sm.font-bold.text-red-600').textContent = '✅ GERICHTSFEST (100/100)';
-                // Finde das span-Element für den Score, das in der vorherigen Version nicht explizit identifiziert war
-                // Da es keine direkte ID gibt, lassen wir diesen Teil weg, um keinen Fehler zu verursachen, 
-                // da der Score in den Checklisten-Einträgen nicht direkt als Zahl angezeigt wird.
+                // Dies sucht das span-Element, das den Score anzeigt
+                const scoreElement = document.querySelector('#content4 .font-bold.text-lg.text-primary').nextElementSibling.querySelector('.text-red-600');
+                if (scoreElement) {
+                    scoreElement.classList.remove('text-red-600');
+                    scoreElement.classList.add('text-green-600');
+                    scoreElement.textContent = '✅ GERICHTSFEST (100/100)';
+                }
                 
             }, 3000); // Kurze Simulation
         }
