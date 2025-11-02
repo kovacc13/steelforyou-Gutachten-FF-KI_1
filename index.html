@@ -97,14 +97,21 @@
     <!-- Header & Tab Navigation -->
     <header class="bg-primary text-white shadow-2xl sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 flex flex-col sm:flex-row justify-between items-center">
-            <!-- LOGO REPLACEMENT: Icon + Text -->
+            <!-- LOGO / VOLLSTÄNDIGE FIRMENBEZEICHNUNG -->
             <div class="flex items-center space-x-4">
                 <!-- Icon als Ersatz für das Logo (immer sichtbar) -->
                 <i class="fa-solid fa-helmet-safety text-white text-4xl p-2 rounded-lg border-2 border-secondary bg-primary"></i>
                 
-                <h1 class="text-4xl font-extrabold">SV-KI-ASSISTENT <span class="text-secondary">| Steel for you</span></h1>
+                <h1 class="text-3xl font-extrabold leading-tight">
+                    Steel for you, DI HTL Ing. Fritz Felber Sachverständiger 
+                    <span class="text-secondary block sm:inline-block text-2xl">| KI Assistent</span>
+                </h1>
             </div>
-            <p class="text-base font-semibold mt-3 sm:mt-0">Workflow für gerichtsfeste Gutachten</p>
+            <!-- ZUSÄTZLICHE INFORMATIONEN RECHTS IM HEADER -->
+            <p class="text-base font-semibold mt-3 sm:mt-0 text-right">
+                Workflow für gerichtsfeste Gutachten<br>
+                <span class="text-sm font-normal opacity-80">Projektdesign: Dr. Christian Kovac</span>
+            </p>
         </div>
         
         <!-- Tabs -->
@@ -132,6 +139,16 @@
         <!-- TAB 1: ÜBERBLICK: PROBLEM & LÖSUNG (Globaler Überblick) -->
         <div id="content1" class="tab-content space-y-8">
             <h2 class="text-3xl font-extrabold text-gray-900 border-b pb-3 border-secondary/50">🎯 Überblick: Problem & Lösung</h2>
+
+            <!-- NEUER ABSCHNITT: AUSGANGSSITUATION -->
+            <div class="p-4 bg-gray-50 rounded-xl border border-gray-200 shadow-inner">
+                <h3 class="text-xl font-bold text-primary mb-2">Ausgangssituation</h3>
+                <p class="text-sm text-gray-700">
+                    Besprechung der Ideen von **DI HTL Ing. Fritz Felber** und **Dr. Christian Kovac** zum Einsatz von KI in den Steel for you Unternehmensbereichen. Es gibt verschiedene potenzielle Use Cases, wobei der hier gezeigte **UC1** als erster für die konkrete Umsetzung besprochen wird.
+                </p>
+            </div>
+            <!-- ENDE AUSGANGSSITUATION -->
+
 
             <!-- Problem & Lösung Summary -->
             <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
