@@ -42,7 +42,7 @@
             width: 100%;
             padding-top: 75%; 
             background: #e5e7eb url('https://placehold.co/600x450/4a5568/ffffff?text=FOTO+8+NAHAUFNAHME+RISS') center center / cover no-repeat;
-            border-radius: 0.75rem; /* Mehr Rounded Corners */
+            border-radius: 0.75rem;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
@@ -61,12 +61,13 @@
             border-radius: 0.75rem; 
             padding: 1.25rem;
             background-color: white;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+            /* Stärkere Schattierung für den seriösen Look */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
             transition: all 0.2s;
         }
         details[open] {
             border-color: var(--color-primary);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
         summary {
             cursor: pointer;
@@ -94,8 +95,19 @@
     <!-- Header & Tab Navigation -->
     <header class="bg-primary text-white shadow-2xl sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center">
-            <h1 class="text-3xl font-extrabold">SV-KI-ASSISTENT <span class="text-secondary">| Steel for you</span></h1>
-            <!-- HIER WURDE DIE SCHRIFT ANGESPASST -->
+            <!-- LOGO INTEGRATION (SVG PLACEHOLDER) -->
+            <div class="flex items-center space-x-3">
+                <svg class="w-8 h-8 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" style="display: none;"></path>
+                    <path d="M4 6h16M4 18h16M12 4v16" stroke-linecap="butt" stroke-width="2.5"></path>
+                    <path d="M4 6h16M4 18h16M12 4v16" style="opacity: 0.1;"></path>
+                    <!-- Simulated I-Beam/Träger Icon -->
+                    <rect x="5" y="4" width="14" height="2" rx="0.5" fill="currentColor"/>
+                    <rect x="5" y="18" width="14" height="2" rx="0.5" fill="currentColor"/>
+                    <rect x="11" y="4" width="2" height="16" fill="currentColor"/>
+                </svg>
+                <h1 class="text-3xl font-extrabold">SV-KI-ASSISTENT <span class="text-secondary">| Steel for you</span></h1>
+            </div>
             <p class="text-sm font-semibold mt-2 sm:mt-0">Workflow für gerichtsfeste Gutachten</p>
         </div>
         
